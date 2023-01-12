@@ -1,0 +1,10 @@
+^D:\QT EXAMPLES\XPAINTER\BUILD\CMAKEFILES\D6783F5707A6C49298FCB20D3CC224A0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Qt examples/xpainter/build/xpainter.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

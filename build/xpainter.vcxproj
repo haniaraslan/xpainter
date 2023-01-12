@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0453A0B7-FA22-30EF-9535-86E3D2BECA5E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>xpainter</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt examples\xpainter\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xpainter.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xpainter</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt examples\xpainter\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xpainter.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xpainter</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt examples\xpainter\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xpainter.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xpainter</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt examples\xpainter\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xpainter.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xpainter</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/qt5_build_/qtbase/include" /external:I "D:/qt5_build_/qtbase/include/QtWidgets" /external:I "D:/qt5_build_/qtbase/include/QtGui" /external:I "D:/qt5_build_/qtbase/include/QtCore" /external:I "D:/qt5_build_/qtbase/../../qt5/qtbase/mkspecs/win32-msvc" /external:I "C:/Program Files/VTK/include/vtk-9.2" /external:I "C:/Program Files/VTK/include/vtk-9.2/vtkfreetype/include" /external:I "D:/qt5_build_/qtbase/include/QtOpenGL"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;vtkRenderingContext2D_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target xpainter</Message>
+      <Command>setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutogenInfo.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/Qt examples/xpainter/build/xpainter_autogen/autouic_Debug.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\VTK\lib\vtkRenderingContextOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingGL2PSOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingQt-9.2d.lib;C:\Program Files\VTK\lib\vtkGUISupportQt-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingHyperTreeGrid-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingUI-9.2d.lib;C:\Program Files\VTK\lib\vtkglew-9.2d.lib;opengl32.lib;C:\Program Files\VTK\lib\vtkInteractionWidgets-9.2d.lib;C:\Program Files\VTK\lib\vtkInteractionStyle-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingContext2D-9.2d.lib;D:\qt5_build_\qtbase\lib\Qt5OpenGLd.lib;D:\qt5_build_\qtbase\lib\Qt5Widgetsd.lib;D:\qt5_build_\qtbase\lib\Qt5Guid.lib;D:\qt5_build_\qtbase\lib\Qt5Cored.lib;D:\qt5_build_\qtbase\lib\qtmaind.lib;C:\Program Files\VTK\lib\vtkRenderingLabel-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingFreeType-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingCore-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonColor-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersSources-9.2d.lib;C:\Program Files\VTK\lib\vtkfreetype-9.2d.lib;C:\Program Files\VTK\lib\vtkzlib-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersGeneral-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersCore-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonExecutionModel-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonDataModel-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonMisc-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonTransforms-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonMath-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonCore-9.2d.lib;C:\Program Files\VTK\lib\vtksys-9.2d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\Program Files\VTK\lib\vtkkissfft-9.2d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt examples/xpainter/build/Debug/xpainter.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Qt examples/xpainter/build/Debug/xpainter.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_Release;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/qt5_build_/qtbase/include" /external:I "D:/qt5_build_/qtbase/include/QtWidgets" /external:I "D:/qt5_build_/qtbase/include/QtGui" /external:I "D:/qt5_build_/qtbase/include/QtCore" /external:I "D:/qt5_build_/qtbase/../../qt5/qtbase/mkspecs/win32-msvc" /external:I "C:/Program Files/VTK/include/vtk-9.2" /external:I "C:/Program Files/VTK/include/vtk-9.2/vtkfreetype/include" /external:I "D:/qt5_build_/qtbase/include/QtOpenGL"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_Release;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_Release;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target xpainter</Message>
+      <Command>setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutogenInfo.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/Qt examples/xpainter/build/xpainter_autogen/autouic_Release.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\VTK\lib\vtkRenderingContextOpenGL2-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingGL2PSOpenGL2-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingQt-9.2.lib;C:\Program Files\VTK\lib\vtkGUISupportQt-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingOpenGL2-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingHyperTreeGrid-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingUI-9.2.lib;C:\Program Files\VTK\lib\vtkglew-9.2.lib;opengl32.lib;C:\Program Files\VTK\lib\vtkInteractionWidgets-9.2.lib;C:\Program Files\VTK\lib\vtkInteractionStyle-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingContext2D-9.2.lib;D:\qt5_build_\qtbase\lib\Qt5OpenGL.lib;D:\qt5_build_\qtbase\lib\Qt5Widgets.lib;D:\qt5_build_\qtbase\lib\Qt5Gui.lib;D:\qt5_build_\qtbase\lib\Qt5Core.lib;D:\qt5_build_\qtbase\lib\qtmain.lib;C:\Program Files\VTK\lib\vtkRenderingLabel-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingFreeType-9.2.lib;C:\Program Files\VTK\lib\vtkRenderingCore-9.2.lib;C:\Program Files\VTK\lib\vtkCommonColor-9.2.lib;C:\Program Files\VTK\lib\vtkFiltersSources-9.2.lib;C:\Program Files\VTK\lib\vtkfreetype-9.2.lib;C:\Program Files\VTK\lib\vtkzlib-9.2.lib;C:\Program Files\VTK\lib\vtkFiltersGeneral-9.2.lib;C:\Program Files\VTK\lib\vtkFiltersCore-9.2.lib;C:\Program Files\VTK\lib\vtkCommonExecutionModel-9.2.lib;C:\Program Files\VTK\lib\vtkCommonDataModel-9.2.lib;C:\Program Files\VTK\lib\vtkCommonMisc-9.2.lib;C:\Program Files\VTK\lib\vtkCommonTransforms-9.2.lib;C:\Program Files\VTK\lib\vtkCommonMath-9.2.lib;C:\Program Files\VTK\lib\vtkCommonCore-9.2.lib;C:\Program Files\VTK\lib\vtksys-9.2.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\Program Files\VTK\lib\vtkkissfft-9.2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt examples/xpainter/build/Release/xpainter.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Qt examples/xpainter/build/Release/xpainter.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_MinSizeRel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/qt5_build_/qtbase/include" /external:I "D:/qt5_build_/qtbase/include/QtWidgets" /external:I "D:/qt5_build_/qtbase/include/QtGui" /external:I "D:/qt5_build_/qtbase/include/QtCore" /external:I "D:/qt5_build_/qtbase/../../qt5/qtbase/mkspecs/win32-msvc" /external:I "C:/Program Files/VTK/include/vtk-9.2" /external:I "C:/Program Files/VTK/include/vtk-9.2/vtkfreetype/include" /external:I "D:/qt5_build_/qtbase/include/QtOpenGL"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_MinSizeRel;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_MinSizeRel;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target xpainter</Message>
+      <Command>setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutogenInfo.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/Qt examples/xpainter/build/xpainter_autogen/autouic_MinSizeRel.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\VTK\lib\vtkRenderingContextOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingGL2PSOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingQt-9.2d.lib;C:\Program Files\VTK\lib\vtkGUISupportQt-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingHyperTreeGrid-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingUI-9.2d.lib;C:\Program Files\VTK\lib\vtkglew-9.2d.lib;opengl32.lib;C:\Program Files\VTK\lib\vtkInteractionWidgets-9.2d.lib;C:\Program Files\VTK\lib\vtkInteractionStyle-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingContext2D-9.2d.lib;D:\qt5_build_\qtbase\lib\Qt5OpenGL.lib;D:\qt5_build_\qtbase\lib\Qt5Widgets.lib;D:\qt5_build_\qtbase\lib\Qt5Gui.lib;D:\qt5_build_\qtbase\lib\Qt5Core.lib;D:\qt5_build_\qtbase\lib\qtmain.lib;C:\Program Files\VTK\lib\vtkRenderingLabel-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingFreeType-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingCore-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonColor-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersSources-9.2d.lib;C:\Program Files\VTK\lib\vtkfreetype-9.2d.lib;C:\Program Files\VTK\lib\vtkzlib-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersGeneral-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersCore-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonExecutionModel-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonDataModel-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonMisc-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonTransforms-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonMath-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonCore-9.2d.lib;C:\Program Files\VTK\lib\vtksys-9.2d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\Program Files\VTK\lib\vtkkissfft-9.2d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt examples/xpainter/build/MinSizeRel/xpainter.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Qt examples/xpainter/build/MinSizeRel/xpainter.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_RelWithDebInfo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/qt5_build_/qtbase/include" /external:I "D:/qt5_build_/qtbase/include/QtWidgets" /external:I "D:/qt5_build_/qtbase/include/QtGui" /external:I "D:/qt5_build_/qtbase/include/QtCore" /external:I "D:/qt5_build_/qtbase/../../qt5/qtbase/mkspecs/win32-msvc" /external:I "C:/Program Files/VTK/include/vtk-9.2" /external:I "C:/Program Files/VTK/include/vtk-9.2/vtkfreetype/include" /external:I "D:/qt5_build_/qtbase/include/QtOpenGL"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingCore_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";vtkRenderingOpenGL2_AUTOINIT_INCLUDE="D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingCore_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";vtkRenderingOpenGL2_AUTOINIT_INCLUDE=\"D:/Qt examples/xpainter/build/CMakeFiles/vtkModuleAutoInit_04d683062bbc5774e34e8c62b13e1a5a.h\";QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;QT_OPENGL_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_RelWithDebInfo;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Qt examples\xpainter\build\xpainter_autogen\include_RelWithDebInfo;D:\qt5_build_\qtbase\include;D:\qt5_build_\qtbase\include\QtWidgets;D:\qt5_build_\qtbase\include\QtGui;D:\qt5_build_\qtbase\include\QtCore;D:\qt5_build_\qtbase\..\..\qt5\qtbase\mkspecs\win32-msvc;C:\Program Files\VTK\include\vtk-9.2;C:\Program Files\VTK\include\vtk-9.2\vtkfreetype\include;D:\qt5_build_\qtbase\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target xpainter</Message>
+      <Command>setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutogenInfo.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/Qt examples/xpainter/build/xpainter_autogen/autouic_RelWithDebInfo.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\VTK\lib\vtkRenderingContextOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingGL2PSOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingQt-9.2d.lib;C:\Program Files\VTK\lib\vtkGUISupportQt-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingOpenGL2-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingHyperTreeGrid-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingUI-9.2d.lib;C:\Program Files\VTK\lib\vtkglew-9.2d.lib;opengl32.lib;C:\Program Files\VTK\lib\vtkInteractionWidgets-9.2d.lib;C:\Program Files\VTK\lib\vtkInteractionStyle-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingContext2D-9.2d.lib;D:\qt5_build_\qtbase\lib\Qt5OpenGL.lib;D:\qt5_build_\qtbase\lib\Qt5Widgets.lib;D:\qt5_build_\qtbase\lib\Qt5Gui.lib;D:\qt5_build_\qtbase\lib\Qt5Core.lib;D:\qt5_build_\qtbase\lib\qtmain.lib;C:\Program Files\VTK\lib\vtkRenderingLabel-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingFreeType-9.2d.lib;C:\Program Files\VTK\lib\vtkRenderingCore-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonColor-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersSources-9.2d.lib;C:\Program Files\VTK\lib\vtkfreetype-9.2d.lib;C:\Program Files\VTK\lib\vtkzlib-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersGeneral-9.2d.lib;C:\Program Files\VTK\lib\vtkFiltersCore-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonExecutionModel-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonDataModel-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonMisc-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonTransforms-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonMath-9.2d.lib;C:\Program Files\VTK\lib\vtkCommonCore-9.2d.lib;C:\Program Files\VTK\lib\vtksys-9.2d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;C:\Program Files\VTK\lib\vtkkissfft-9.2d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Qt examples/xpainter/build/RelWithDebInfo/xpainter.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Qt examples/xpainter/build/RelWithDebInfo/xpainter.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt examples\xpainter\build\CMakeFiles\3cb1b835d168dd30720b9eaa30400289\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt examples\xpainter\paint3d.ui;D:\Qt examples\xpainter\drawarea.ui;D:\qt5_build_\qtbase\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt examples\xpainter\paint3d.ui;D:\Qt examples\xpainter\drawarea.ui;D:\qt5_build_\qtbase\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt examples\xpainter\paint3d.ui;D:\Qt examples\xpainter\drawarea.ui;D:\qt5_build_\qtbase\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt examples\xpainter\paint3d.ui;D:\Qt examples\xpainter\drawarea.ui;D:\qt5_build_\qtbase\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt examples\xpainter\build\CMakeFiles\91431d1dc13d654b527927389e0a00fb\qrc_resources.cpp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for Resources/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\xpainter_autogen.dir\AutoRcc_resources_S5YYZ2ZCNV_Info.json;D:\Qt examples\xpainter\Resources\brushes images\oil brush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor brush.png;D:\Qt examples\xpainter\Resources\brushes images\oilBrush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor2.png;D:\Qt examples\xpainter\Resources\brushes images\ink2.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor.png;D:\Qt examples\xpainter\Resources\icons\paintbrush.png;D:\Qt examples\xpainter\Resources\icons\save.png;D:\Qt examples\xpainter\Resources\icons\open.png;D:\Qt examples\xpainter\Resources\icons\printer.png;D:\Qt examples\xpainter\Resources\icons\redo.png;D:\Qt examples\xpainter\Resources\icons\back.png;D:\Qt examples\xpainter\Resources\icons\2d.png;D:\Qt examples\xpainter\Resources\icons\3d-model.png;D:\qt5_build_\qtbase\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\S5YYZ2ZCNV\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for Resources/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\xpainter_autogen.dir\AutoRcc_resources_S5YYZ2ZCNV_Info.json;D:\Qt examples\xpainter\Resources\brushes images\oil brush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor brush.png;D:\Qt examples\xpainter\Resources\brushes images\oilBrush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor2.png;D:\Qt examples\xpainter\Resources\brushes images\ink2.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor.png;D:\Qt examples\xpainter\Resources\icons\paintbrush.png;D:\Qt examples\xpainter\Resources\icons\save.png;D:\Qt examples\xpainter\Resources\icons\open.png;D:\Qt examples\xpainter\Resources\icons\printer.png;D:\Qt examples\xpainter\Resources\icons\redo.png;D:\Qt examples\xpainter\Resources\icons\back.png;D:\Qt examples\xpainter\Resources\icons\2d.png;D:\Qt examples\xpainter\Resources\icons\3d-model.png;D:\qt5_build_\qtbase\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\S5YYZ2ZCNV\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for Resources/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\xpainter_autogen.dir\AutoRcc_resources_S5YYZ2ZCNV_Info.json;D:\Qt examples\xpainter\Resources\brushes images\oil brush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor brush.png;D:\Qt examples\xpainter\Resources\brushes images\oilBrush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor2.png;D:\Qt examples\xpainter\Resources\brushes images\ink2.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor.png;D:\Qt examples\xpainter\Resources\icons\paintbrush.png;D:\Qt examples\xpainter\Resources\icons\save.png;D:\Qt examples\xpainter\Resources\icons\open.png;D:\Qt examples\xpainter\Resources\icons\printer.png;D:\Qt examples\xpainter\Resources\icons\redo.png;D:\Qt examples\xpainter\Resources\icons\back.png;D:\Qt examples\xpainter\Resources\icons\2d.png;D:\Qt examples\xpainter\Resources\icons\3d-model.png;D:\qt5_build_\qtbase\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\S5YYZ2ZCNV\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for Resources/resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "D:\Qt examples\xpainter\build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/Qt examples/xpainter/build/CMakeFiles/xpainter_autogen.dir/AutoRcc_resources_S5YYZ2ZCNV_Info.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\xpainter_autogen.dir\AutoRcc_resources_S5YYZ2ZCNV_Info.json;D:\Qt examples\xpainter\Resources\brushes images\oil brush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor brush.png;D:\Qt examples\xpainter\Resources\brushes images\oilBrush.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor2.png;D:\Qt examples\xpainter\Resources\brushes images\ink2.png;D:\Qt examples\xpainter\Resources\brushes images\watercolor.png;D:\Qt examples\xpainter\Resources\icons\paintbrush.png;D:\Qt examples\xpainter\Resources\icons\save.png;D:\Qt examples\xpainter\Resources\icons\open.png;D:\Qt examples\xpainter\Resources\icons\printer.png;D:\Qt examples\xpainter\Resources\icons\redo.png;D:\Qt examples\xpainter\Resources\icons\back.png;D:\Qt examples\xpainter\Resources\icons\2d.png;D:\Qt examples\xpainter\Resources\icons\3d-model.png;D:\qt5_build_\qtbase\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt examples\xpainter\build\xpainter_autogen\S5YYZ2ZCNV\qrc_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt examples\xpainter\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\main.cpp" />
+    <ClCompile Include="D:\Qt examples\xpainter\paint3d.cpp" />
+    <ClInclude Include="D:\Qt examples\xpainter\paint3d.h" />
+    <None Include="D:\Qt examples\xpainter\paint3d.ui">
+    </None>
+    <ClInclude Include="D:\Qt examples\xpainter\drawarea.h" />
+    <ClCompile Include="D:\Qt examples\xpainter\drawarea.cpp" />
+    <None Include="D:\Qt examples\xpainter\drawarea.ui">
+    </None>
+    <ClInclude Include="D:\Qt examples\xpainter\Brushes.h" />
+    <ClCompile Include="D:\Qt examples\xpainter\Brushes.cpp" />
+    <ClInclude Include="D:\Qt examples\xpainter\shapes2D.h" />
+    <ClCompile Include="D:\Qt examples\xpainter\shapes2D.cpp" />
+    <None Include="D:\Qt examples\xpainter\Resources\resources.qrc">
+    </None>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug\ui_paint3d.h" />
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug\ui_drawarea.h" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\S5YYZ2ZCNV\qrc_resources.cpp" />
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Release\ui_paint3d.h" />
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Release\ui_drawarea.h" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_MinSizeRel\ui_paint3d.h" />
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_MinSizeRel\ui_drawarea.h" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_RelWithDebInfo\ui_paint3d.h" />
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_RelWithDebInfo\ui_drawarea.h" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Qt examples\xpainter\build\ZERO_CHECK.vcxproj">
+      <Project>{02B15CCF-BCE9-3701-B8AC-E572109FB58D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

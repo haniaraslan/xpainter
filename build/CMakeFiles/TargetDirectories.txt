@@ -1,0 +1,4 @@
+D:/Qt examples/xpainter/build/CMakeFiles/xpainter.dir
+D:/Qt examples/xpainter/build/CMakeFiles/INSTALL.dir
+D:/Qt examples/xpainter/build/CMakeFiles/ALL_BUILD.dir
+D:/Qt examples/xpainter/build/CMakeFiles/ZERO_CHECK.dir

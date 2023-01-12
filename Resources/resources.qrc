@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/back.png</file>
+        <file>icons/2d.png</file>
+        <file>icons/3d-model.png</file>
+        <file>icons/open.png</file>
+        <file>icons/paintbrush.png</file>
+        <file>icons/printer.png</file>
+        <file>icons/redo.png</file>
+        <file>icons/save.png</file>
+    </qresource>
+    <qresource prefix="/brushes">
+        <file>brushes images/ink2.png</file>
+        <file>brushes images/oil brush.png</file>
+        <file>brushes images/oilBrush.png</file>
+        <file>brushes images/watercolor brush.png</file>
+        <file>brushes images/watercolor.png</file>
+        <file>brushes images/watercolor2.png</file>
+    </qresource>
+</RCC>

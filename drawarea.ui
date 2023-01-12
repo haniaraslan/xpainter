@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DrawArea</class>
+ <widget class="QWidget" name="DrawArea">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1088</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QDockWidget" name="sideDock">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>0</y>
+     <width>200</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(159, 159, 159);</string>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::RightDockWidgetArea</set>
+   </property>
+   <widget class="QWidget" name="dockWidgetContents">
+    <property name="maximumSize">
+     <size>
+      <width>200</width>
+      <height>16777215</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

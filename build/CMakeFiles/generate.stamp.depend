@@ -1,0 +1,81 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/ExternalData.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/GenerateExportHeader.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/VTK-targets-debug.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/VTK-targets-release.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/VTK-targets.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/VTK-vtk-module-find-packages.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/VTK-vtk-module-properties.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/patches/99/FindOpenGL.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtk-config-version.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtk-config.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtk-prefix.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkCMakeBackports.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkEncodeString.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkHashSource.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkModule.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkModuleJson.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkModuleTesting.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkObjectFactory.cmake
+C:/Program Files/VTK/lib/cmake/vtk-9.2/vtkTopologicalSort.cmake
+D:/Qt examples/xpainter/CMakeLists.txt
+D:/Qt examples/xpainter/Resources/resources.qrc
+D:/Qt examples/xpainter/build/CMakeFiles/3.25.1/CMakeCXXCompiler.cmake
+D:/Qt examples/xpainter/build/CMakeFiles/3.25.1/CMakeRCCompiler.cmake
+D:/Qt examples/xpainter/build/CMakeFiles/3.25.1/CMakeSystem.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5/Qt5Config.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5/Qt5ConfigVersion.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5/Qt5ModuleLocation.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Core/Qt5CoreMacros.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake
+D:/qt5_build_/qtbase/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake

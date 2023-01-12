@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A72FE08-9D10-3862-AA0E-0EAC91749952}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt examples\xpainter\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Qt examples/xpainter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Qt examples/xpainter" "-BD:/Qt examples/xpainter/build" --check-stamp-file "D:/Qt examples/xpainter/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-debug.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets-release.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-targets.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-find-packages.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\VTK-vtk-module-properties.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\patches\99\FindOpenGL.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config-version.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-config.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtk-prefix.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkCMakeBackports.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkEncodeString.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkHashSource.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModule.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleJson.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkModuleTesting.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkObjectFactory.cmake;C:\Program Files\VTK\lib\cmake\vtk-9.2\vtkTopologicalSort.cmake;D:\Qt examples\xpainter\Resources\resources.qrc;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Qt examples\xpainter\build\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5Config.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\qt5_build_\qtbase\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Qt examples\xpainter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Qt examples\xpainter\build\ZERO_CHECK.vcxproj">
+      <Project>{02B15CCF-BCE9-3701-B8AC-E572109FB58D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Qt examples\xpainter\build\xpainter.vcxproj">
+      <Project>{0453A0B7-FA22-30EF-9535-86E3D2BECA5E}</Project>
+      <Name>xpainter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

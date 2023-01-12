@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\paint3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\drawarea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\Brushes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\shapes2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\S5YYZ2ZCNV\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Qt examples\xpainter\paint3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\drawarea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\Brushes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\shapes2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug\ui_paint3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug\ui_drawarea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Release\ui_paint3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Release\ui_drawarea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_MinSizeRel\ui_paint3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_MinSizeRel\ui_drawarea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_RelWithDebInfo\ui_paint3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_RelWithDebInfo\ui_drawarea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Qt examples\xpainter\build\CMakeFiles\3cb1b835d168dd30720b9eaa30400289\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Qt examples\xpainter\build\CMakeFiles\91431d1dc13d654b527927389e0a00fb\qrc_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Qt examples\xpainter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Qt examples\xpainter\paint3d.ui" />
+    <None Include="D:\Qt examples\xpainter\drawarea.ui" />
+    <None Include="D:\Qt examples\xpainter\Resources\resources.qrc" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_Debug.stamp" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_Release.stamp" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="D:\Qt examples\xpainter\build\xpainter_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{902096A4-6E97-3554-98CD-AA90BFF95B45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8FF5B349-7DCF-3801-B31A-7C4643EBA20B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7B2FBC38-3EEC-3005-AB44-75788D4A6C21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
