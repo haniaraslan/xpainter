@@ -9,7 +9,7 @@
 #include <qbrush.h>
 #include <QtWidgets>
 #include <QColor>
-#include <string>
+#include <QString>
 #include <vtkGenericOpenGLRenderWindow.h>
 
 
@@ -47,7 +47,9 @@ private slots:
 	void waterColorBrush();
 	void undo();
 	void redo();
-	void addShape(std::string shape);
+	void add2DShape(QString shape);
+	void add3DShape(QString shape);
+
 
 
 private:
@@ -60,14 +62,14 @@ private:
     //all variables needed
     DrawArea* drawArea;
 	Brushes* brushes;
-	std::string shape;
+	QString shape;
 
 	QPushButton* circleButton;
 	QPushButton* squareButton;
 	QPushButton* triangleButton;
 	QPushButton* sphereButton;
 	QPushButton* cubeButton;
-	QPushButton* pyramidButton;
+	QPushButton* coneButton;
 
 };
 

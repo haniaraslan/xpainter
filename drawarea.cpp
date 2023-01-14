@@ -157,6 +157,8 @@ void DrawArea::resizeImage(QImage *image, const QSize &newSize){
 
 void DrawArea::addWidget(QWidget *widget) {
 	/*ui->layout()->addWidget(widget);*/
+	//ui->openGLWidget = new QOpenGLWidget(widget);
+	//ui->openGLWidget->show();
 	widget->show();
 }
 

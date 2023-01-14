@@ -581,6 +581,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\Qt examples\xpainter\Brushes.cpp" />
     <ClInclude Include="D:\Qt examples\xpainter\shapes2D.h" />
     <ClCompile Include="D:\Qt examples\xpainter\shapes2D.cpp" />
+    <ClInclude Include="D:\Qt examples\xpainter\shapes3D.h" />
+    <ClCompile Include="D:\Qt examples\xpainter\shapes3D.cpp" />
     <None Include="D:\Qt examples\xpainter\Resources\resources.qrc">
     </None>
     <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug\ui_paint3d.h" />

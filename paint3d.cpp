@@ -1,6 +1,7 @@
 #include "paint3d.h"
 #include "./ui_paint3d.h"
 #include "shapes2D.h"
+#include "shapes3D.h"
 #include "drawarea.h"
 
 #include <QtWidgets>
@@ -9,6 +10,7 @@
 #include <QDockWidget>
 #include <string>
 #include <QVTKOpenGLNativeWidget.h>
+
 
 Paint3D::Paint3D(QWidget *parent)
     : QMainWindow(parent)
@@ -25,9 +27,9 @@ Paint3D::Paint3D(QWidget *parent)
     createActions();
 
 	resize(1500, 1000);
-
+	//addShape();
 	addDock();
-	shape = "";
+	shape = "circle";
 }
 
 
@@ -37,7 +39,7 @@ void Paint3D::addDock() {
 
 	addDockWidget(Qt::RightDockWidgetArea, controlDock);
 
-	controlDock->setWindowTitle("Side Bar");
+	controlDock->setWindowTitle("Sidebar");
 
 	QWidget *layoutContainer = new QWidget(this);
 	//2d buttons
@@ -46,9 +48,9 @@ void Paint3D::addDock() {
 	triangleButton = new QPushButton("Triangle", layoutContainer);
 
 	//3d buttons
-	sphereButton = new QPushButton("Sphere",layoutContainer);
-	cubeButton = new QPushButton("Cube",layoutContainer);
-	pyramidButton = new QPushButton("Pyramid",layoutContainer);
+	sphereButton = new QPushButton("Sphere", layoutContainer);
+	cubeButton = new QPushButton("Cube", layoutContainer);
+	coneButton = new QPushButton("Cone", layoutContainer);
 
 	QPointer<QGridLayout> dockLayout = new QGridLayout();
 
@@ -58,13 +60,19 @@ void Paint3D::addDock() {
 
 	dockLayout->addWidget(sphereButton,1,0);
 	dockLayout->addWidget(cubeButton, 1, 1);
-	dockLayout->addWidget(pyramidButton, 1, 2);
+	dockLayout->addWidget(coneButton, 1, 2);
 
 	layoutContainer->setLayout(dockLayout);
 
 	controlDock->setWidget(layoutContainer);
 
-	connect(circleButton, SIGNAL(clicked()), this, SLOT(addShape("circle"))); 
+	connect(circleButton, &QPushButton::released, this, [=]()->void { add2DShape("circle"); });
+	connect(squareButton, &QPushButton::released, this, [=]()->void { add2DShape("square"); });
+	connect(triangleButton, &QPushButton::released, this, [=]()->void { add2DShape("triangle"); });
+
+	connect(sphereButton, &QPushButton::released, this, [=]()->void { add3DShape("sphere"); });
+	connect(cubeButton, &QPushButton::released, this, [=]()->void { add3DShape("cube"); });
+	connect(coneButton, &QPushButton::released, this, [=]()->void { add3DShape("cone"); });
 
 	controlDock->show();
 }
@@ -81,7 +89,7 @@ void Paint3D::open(){
     //check if img is changed first before opening a new file
     if(saveCheck()){
         QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), QDir::currentPath());
-        if(fileName.isEmpty()){
+        if(!fileName.isEmpty()){
             drawArea->openImage(fileName);
         }
     }
@@ -110,6 +118,7 @@ void Paint3D::penColor() {
 	}
 	QBrush brush;
 
+	update();
 }
 
 
@@ -216,12 +225,45 @@ void Paint3D::redo() {
 	//ui->drawArea->redo();
 }
 
-void Paint3D::addShape(std::string shape) {
+void Paint3D::add2DShape(QString shape) {
+
+	this->shape = shape;
 	shapes2D *newShape = new shapes2D();
-	//vtkNew<vtkGenericOpenGLRenderWindow> window = newShape->createPolygon(shape);
-	QPointer<QVTKOpenGLNativeWidget> widgetPtr = newShape->createPolygon(shape);
-	drawArea->addWidget(widgetPtr);
-	//DrawArea::ui->setLayout(new QVBoxLayout);
+	QVTKOpenGLNativeWidget *widgetPtr = newShape->createPolygon(shape,brushes->penColor() );
+	widgetPtr->setAutoFillBackground(false);
+
+	QPointer<QVBoxLayout> layout = new QVBoxLayout();
+	layout->addWidget(widgetPtr);
+	
+	QFrame *layoutContainer = new QFrame(this);
+	layoutContainer->setLayout(layout); 
+	layoutContainer->setGeometry(200, 200, 200, 200);
+	layoutContainer->setAutoFillBackground(false);
+	layoutContainer->setStyleSheet("background-color: rgba(255, 255, 255,0);");
+	layoutContainer->show();
+	Paint3D::update();
+	
+}
+
+
+void Paint3D::add3DShape(QString shape) {
+
+	this->shape = shape;
+	shapes3D *newShape = new shapes3D();
+	QVTKOpenGLNativeWidget *widgetPtr = newShape->createPolygon(shape, brushes->penColor());
+	widgetPtr->setAutoFillBackground(false);
+
+	QPointer<QVBoxLayout> layout = new QVBoxLayout();
+	layout->addWidget(widgetPtr);
+
+	QFrame *layoutContainer = new QFrame(this);
+	layoutContainer->setLayout(layout);
+	layoutContainer->setGeometry(400,200, 200, 200);
+	layoutContainer->setAutoFillBackground(false);
+	layoutContainer->setStyleSheet("background-color: rgba(255, 255, 255,0);");
+	layoutContainer->show();
+	Paint3D::update();
+
 }
 
 

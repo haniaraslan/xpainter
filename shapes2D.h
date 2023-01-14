@@ -14,10 +14,10 @@
 #include <vtkInteractorStyleTrackballCamera.h>
 #include <vtkRegularPolygonSource.h>
 #include <array>
-#include <string>
+#include <QString>
 #include <QWidget>
 #include <QtWidgets>
-
+#include <QColor>
 #include <QPointer>
 #include <QVTKOpenGLNativeWidget.h>
 
@@ -30,13 +30,15 @@ class shapes2D : public QWidget
 public:
 	explicit shapes2D(QWidget *parent = nullptr);
 	
+
 	//void setColor(vtkNamedColors color);
 	//vtkNamedColors getColor();
-	QPointer<QVTKOpenGLNativeWidget> createPolygon(std::string type);
+	QVTKOpenGLNativeWidget *createPolygon(QString type, QColor color);
 
 private:
 	//vtkNew<vtkNamedColors> colors;
 	//vtkNew<vtkRegularPolygonSource> polygonSource;
+	QVTKOpenGLNativeWidget *widget;
 	std::string type;
 };
 

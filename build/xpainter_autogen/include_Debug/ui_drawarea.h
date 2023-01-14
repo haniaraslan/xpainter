@@ -11,7 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QOpenGLWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -19,25 +19,16 @@ QT_BEGIN_NAMESPACE
 class Ui_DrawArea
 {
 public:
-    QDockWidget *sideDock;
-    QWidget *dockWidgetContents;
+    QOpenGLWidget *openGLWidget;
 
     void setupUi(QWidget *DrawArea)
     {
         if (DrawArea->objectName().isEmpty())
             DrawArea->setObjectName(QString::fromUtf8("DrawArea"));
         DrawArea->resize(1088, 577);
-        sideDock = new QDockWidget(DrawArea);
-        sideDock->setObjectName(QString::fromUtf8("sideDock"));
-        sideDock->setGeometry(QRect(800, 0, 200, 500));
-        sideDock->setMaximumSize(QSize(200, 524287));
-        sideDock->setStyleSheet(QString::fromUtf8("background-color: rgb(159, 159, 159);"));
-        sideDock->setFloating(false);
-        sideDock->setAllowedAreas(Qt::RightDockWidgetArea);
-        dockWidgetContents = new QWidget();
-        dockWidgetContents->setObjectName(QString::fromUtf8("dockWidgetContents"));
-        dockWidgetContents->setMaximumSize(QSize(200, 16777215));
-        sideDock->setWidget(dockWidgetContents);
+        openGLWidget = new QOpenGLWidget(DrawArea);
+        openGLWidget->setObjectName(QString::fromUtf8("openGLWidget"));
+        openGLWidget->setGeometry(QRect(280, 210, 300, 200));
 
         retranslateUi(DrawArea);
 

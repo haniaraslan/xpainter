@@ -148,6 +148,12 @@
 			"MU",
 			"EWIEGA46WW/moc_shapes2D.cpp",
 			null
+		],
+		[
+			"D:/Qt examples/xpainter/shapes3D.h",
+			"MU",
+			"EWIEGA46WW/moc_shapes3D.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -235,7 +241,8 @@
 		[ "D:/Qt examples/xpainter/drawarea.cpp", "MU", null ],
 		[ "D:/Qt examples/xpainter/main.cpp", "MU", null ],
 		[ "D:/Qt examples/xpainter/paint3d.cpp", "MU", null ],
-		[ "D:/Qt examples/xpainter/shapes2D.cpp", "MU", null ]
+		[ "D:/Qt examples/xpainter/shapes2D.cpp", "MU", null ],
+		[ "D:/Qt examples/xpainter/shapes3D.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

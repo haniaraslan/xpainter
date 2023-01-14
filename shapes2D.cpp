@@ -34,66 +34,61 @@ shapes2D::shapes2D(QWidget *parent) :
 //void setColor(vtkNamedColors color) {}
 //<vtkNamedColors> getColor() {}
 
-QPointer<QVTKOpenGLNativeWidget> shapes2D::createPolygon(std::string type) {
+QVTKOpenGLNativeWidget *shapes2D::createPolygon(QString shape, QColor color) {
+	
 	vtkNew<vtkNamedColors> colors;
+	colors->SetColor("Current", color.redF(), color.greenF(), color.blueF(), 1);
+
+	QPointer<QVTKOpenGLNativeWidget> vtkRenderWidget = new QVTKOpenGLNativeWidget();
+	
+	vtkNew<vtkGenericOpenGLRenderWindow> window;
+	vtkRenderWidget->setRenderWindow(window.Get());
+	vtkRenderWidget->setAutoFillBackground(false);
+
 	vtkNew<vtkRegularPolygonSource> polygonSource;
 
 	polygonSource->GeneratePolygonOff();
 
-	if (type == "circle") {
-		polygonSource->SetNumberOfSides(50); 
+	if (shape == "circle") {
+		polygonSource->SetNumberOfSides(50);
 	}
-	else if (type == "square") {
-		polygonSource->SetNumberOfSides(4); 
+	else if (shape == "square") {
+		polygonSource->SetNumberOfSides(4);
 	}
-	else if (type == "triangle") {
-		polygonSource->SetNumberOfSides(3); 
+	else if (shape == "triangle") {
+		polygonSource->SetNumberOfSides(3);
 	}
-	else if (type == "pentagon") {
-		polygonSource->SetNumberOfSides(5); 
+	else if (shape == "pentagon") {
+		polygonSource->SetNumberOfSides(5);
 	}
-	else if (type == "hexagon") {
-		polygonSource->SetNumberOfSides(6); 
+	else if (shape == "hexagon") {
+		polygonSource->SetNumberOfSides(6);
 	}
 
-	//TODO:: set center to mouse location
-
-		//visualize
 	vtkNew<vtkPolyDataMapper> mapper;
 	mapper->SetInputConnection(polygonSource->GetOutputPort());
 
 	vtkNew<vtkActor> actor;
 	actor->SetMapper(mapper);
-	actor->GetProperty()->SetColor(colors->GetColor3d("Cornsilk").GetData());
+	actor->GetProperty()->SetColor(colors->GetColor3d("Current").GetData());
 
 	vtkNew<vtkRenderer> renderer;
 	renderer->AddActor(actor);
-	renderer->SetBackground(colors->GetColor3d("DarkGreen").GetData());
+	renderer->SetBackgroundAlpha(0.0);
+	renderer->SetBackground(1.0,1.0,1.0);
+	
+	renderer->SetUseDepthPeeling(1);
+	renderer->SetOcclusionRatio(0.2);
 
-	vtkNew<vtkRenderWindow> renderWindow;
-	renderWindow->SetSize(300, 300);
-	renderWindow->AddRenderer(renderer);
-	renderWindow->SetWindowName(type.c_str());
+	renderer->ResetCamera();
 
-	//-----------------rendering---------------------------//
-	/*vtkNew<vtkRenderWindowInteractor> renderWindowInteractor;
-	renderWindowInteractor->SetRenderWindow(renderWindow);
+	renderer->GetActiveCamera()->Zoom(1.4);
 
-	vtkNew <vtkInteractorStyleTrackballCamera> style;
-	renderWindowInteractor->SetInteractorStyle(style);
-
-	renderWindow->Render();
-	renderWindowInteractor->Start();*/
-
-	QPointer<QVTKOpenGLNativeWidget> vtkRenderWidget =
-		new QVTKOpenGLNativeWidget();
-	//mainWindow.setCentralWidget(vtkRenderWidget);
-
-	// VTK part
-	vtkNew<vtkGenericOpenGLRenderWindow> window;
-	vtkRenderWidget->setRenderWindow(window.Get());
 	window->SetAlphaBitPlanes(1);
+	vtkRenderWidget->setStyleSheet("background-color: rgba(255, 255, 255,0);");
 	window->AddRenderer(renderer);
+
+	this->widget = vtkRenderWidget;
 
 	return vtkRenderWidget;
 

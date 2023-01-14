@@ -26,6 +26,8 @@ find_package(VTK COMPONENTS
   RenderingOpenGL2
   GUISupportQt
   RenderingQt
+  CommonDataModel
+  CommonExecutionModel
 )
 
 
@@ -45,6 +47,8 @@ set(PROJECT_SOURCES
 		Brushes.cpp
 		shapes2D.h
 		shapes2D.cpp
+		shapes3D.h
+		shapes3D.cpp
 		Resources/resources.qrc
 
 )

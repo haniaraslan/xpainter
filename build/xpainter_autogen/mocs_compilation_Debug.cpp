@@ -3,3 +3,4 @@
 #include <EWIEGA46WW/moc_drawarea.cpp>
 #include <EWIEGA46WW/moc_paint3d.cpp>
 #include <EWIEGA46WW/moc_shapes2D.cpp>
+#include <EWIEGA46WW/moc_shapes3D.cpp>

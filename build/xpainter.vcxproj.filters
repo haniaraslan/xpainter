@@ -19,6 +19,9 @@
     <ClCompile Include="D:\Qt examples\xpainter\shapes2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Qt examples\xpainter\shapes3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\Qt examples\xpainter\build\xpainter_autogen\S5YYZ2ZCNV\qrc_resources.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -43,6 +46,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Qt examples\xpainter\shapes2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Qt examples\xpainter\shapes3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Qt examples\xpainter\build\xpainter_autogen\include_Debug\ui_paint3d.h">

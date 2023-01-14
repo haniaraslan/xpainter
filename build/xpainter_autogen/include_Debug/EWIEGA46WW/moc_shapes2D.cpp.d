@@ -568,6 +568,7 @@ D:/Qt\ examples/xpainter/build/xpainter_autogen/include_Debug/EWIEGA46WW/moc_sha
   D:/qt5_build_/qtbase/include/QtCore/QSharedDataPointer \
   D:/qt5_build_/qtbase/include/QtCore/QSize \
   D:/qt5_build_/qtbase/include/QtCore/QSizeF \
+  D:/qt5_build_/qtbase/include/QtCore/QString \
   D:/qt5_build_/qtbase/include/QtCore/QStringList \
   D:/qt5_build_/qtbase/include/QtCore/QVariant \
   D:/qt5_build_/qtbase/include/QtCore/QtCore \
@@ -764,6 +765,7 @@ D:/Qt\ examples/xpainter/build/xpainter_autogen/include_Debug/EWIEGA46WW/moc_sha
   D:/qt5_build_/qtbase/include/QtCore/qwaitcondition.h \
   D:/qt5_build_/qtbase/include/QtCore/qwineventnotifier.h \
   D:/qt5_build_/qtbase/include/QtCore/qxmlstream.h \
+  D:/qt5_build_/qtbase/include/QtGui/QColor \
   D:/qt5_build_/qtbase/include/QtGui/QImage \
   D:/qt5_build_/qtbase/include/QtGui/QMatrix3x3 \
   D:/qt5_build_/qtbase/include/QtGui/QMatrix4x4 \
